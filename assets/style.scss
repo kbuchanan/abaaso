@@ -71,8 +71,7 @@ section {
 	> div {
 		margin-bottom: $increment;
 
-		> *,
-		&:last-child {
+		> * {
 			margin-bottom: 0;
 		}
 	}
