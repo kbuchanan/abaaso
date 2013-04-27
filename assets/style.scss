@@ -1,0 +1,236 @@
+$width: 950px;
+$font: 14pt;
+$increment: 50px;
+
+html,
+body {
+	min-height: 100%;
+	min-width: $width + 10;
+}
+
+* {
+	font-weight: normal !important;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+body {
+	font-size: $font;
+	font-family: "Josefin Sans", helvetica, arial;
+
+	> header,
+	> article,
+	> footer {
+		clear: both;
+		width: $width;
+		margin: $increment auto $increment auto;
+	}
+}
+
+header {
+	a {
+		margin-right: $increment;
+		display: inline-block;
+
+		img {
+			vertical-align: middle;
+		}
+	}
+
+	h1 {
+		display: inline-block;
+		line-height: 0pt;
+	}
+}
+
+h1 {
+	font-size: 56pt;
+}
+
+h2 {
+	font-size: $font + 6;
+	line-height: $font + 18;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	outline: 0;
+
+	&:hover {
+		color: #ccc;
+		cursor: pointer;
+	}
+
+	img {
+		border: none;
+	}
+}
+
+section {
+	> div {
+		margin-bottom: $increment;
+
+		> *,
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&.list {
+		width: $increment * 3;
+		margin-right: $increment;
+		display: inline-block;
+		float: left;
+		min-height: $increment * 10;
+	}
+
+	&.markdown {
+		float: left;
+		width: $increment * 15;
+		overflow: hidden;
+		min-height: $increment * 2;
+
+		* {
+			margin-bottom: $increment / 2;
+		}
+
+		h1 {
+			font-size: 40pt;
+		}
+
+		h2 {
+			font-size: 32pt;
+			border-bottom: 1px solid #000;
+			margin-top: $increment;
+		}
+
+		h3 {
+			font-size: 18pt;
+			font-weight: bold !important;
+		}
+
+		pre {
+			border: 1px solid #000;
+			background: #3F3F3F;
+			overflow: auto;
+		}
+
+		code {
+			font-size: $font - 4 !important;
+			margin-bottom: 0px;
+		}
+	}
+}
+
+ul {
+	li {
+		margin-top: $increment / 5;
+		list-style: none;
+	}
+}
+
+fieldset {
+	border: none;
+}
+
+footer {
+	form {
+		margin: 0 0 $increment 0;
+	}
+}
+
+#social {
+	display: inline-block;
+
+	li {
+		float: left;
+		width: $increment * 2.5;
+		height: $increment / 2;
+		overflow: hidden;
+	}
+}
+
+.boxes {
+	display: inline-block;
+	overflow: hidden;
+
+	a[data-section="download"]:hover {
+		background: #ff9627;
+	}
+
+	a[data-section="api"]:hover {
+		background: #1d7f9f;
+	}
+
+	a[data-section="tutorials"]:hover {
+		background: #1dbb52;
+	}
+
+	.box {
+		padding: 2em 0 2em 0;
+		width: 278px;
+		float: left;
+		background: #e4e4e4;
+		text-align: center;
+		font-size: $font + 6;
+		margin-right: $increment;
+		display: inline-block;
+
+		&:hover {
+			color: #fff;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		* {
+			vertical-align: middle;
+		}
+	}
+}
+
+.container {
+	display: inline-block;
+}
+
+.half {
+	width: $increment * 9;
+	margin-right: $increment;
+	display: inline-block;
+	float: left;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.github {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.gray {
+	color: #ccc;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.last {
+	margin-right: 0 !important;
+}
+
+.loading {
+	background-image: url(loading.gif);
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.version {
+	display: inline-block;
+	margin-top: $increment / 5;
+}

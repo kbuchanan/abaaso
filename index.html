@@ -1,80 +1,123 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Abaaso by avoidwork</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>abaaso - RESTful JavaScript Application Framework</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="abaaso,REST,RESTful,javascript,api,framework,javascript framework,HATEOAS,hypermedia,richardson maturity model,rmm3,rmm,level 3,level three" />
+<meta name="description" content="abaaso is a lightweight Enterprise class RESTful JavaScript framework" />
+<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Sans">
+<link rel="stylesheet" type="text/css" href="assets/style.css" media="print,screen" />
+<script type="text/javascript" src="http://cdn.abaaso.com/abaaso.min.js"></script>
+<script type="text/javascript" src="assets/modernizr.js"></script>
+<script type="text/javascript" src="assets/dashboard.min.js"></script>
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Abaaso</h1>
-        <p>abaaso is a modern, lightweight Enterprise class RESTful JavaScript application framework.</p>
+<header>
+  <a class="section" data-section="main" title="Main" href="/"><img src="assets/abaaso.png" alt="abaaso" /></a>
+  <h1>abaaso</h1>
+</header>
 
-        <p class="view"><a href="https://github.com/avoidwork/abaaso">View the Project on GitHub <small>avoidwork/abaaso</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/avoidwork/abaaso/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/avoidwork/abaaso/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/avoidwork/abaaso">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <p><a href="http://travis-ci.org/avoidwork/abaaso"><img src="https://secure.travis-ci.org/avoidwork/abaaso.png" alt="build status"></a></p>
-
-<h2>What is Supported?</h2>
-
-<p>All standards compliant browsers and platforms such as Desktops, Tablets, Smartphones, Google TV, and more!</p>
-
-<ul>
-<li>Microsoft Internet Explorer 8+ (Standards Mode)</li>
-<li>Google Chrome 6+</li>
-<li>Mozilla FireFox 3.6+</li>
-<li>Apple Safari 5+</li>
-<li>Opera 9+</li>
-<li>Apple iPhone / iPod Touch / iPad</li>
-<li>Google Android</li>
-<li>node.js &amp; npm (npm install abaaso)</li>
-</ul><h2>Features</h2>
-
-<ul>
-<li>Automatic RESTful XHR / AJAX!</li>
-<li>Hypermedia As The Engine Of Application State (HATEOAS) with a user defined HTTP header</li>
-<li>Object Oriented Programming with classes, methods and chaining</li>
-<li>Semantic classes &amp; methods, easy to read and easy to say out loud</li>
-<li>Helper function $() with DOM selectors</li>
-<li>Advanced event handling with multiple Application States</li>
-<li>Deep Setting with define()</li>
-<li>Namespace is available on $</li>
-</ul><h2>How to build</h2>
-
-<ol>
-<li>Install node.js &amp; npm</li>
-<li>Run "npm install grunt -g"</li>
-<li>Run "git clone git://github.com/avoidwork/abaaso.git"</li>
-<li>Enter the abaaso directory &amp; run "grunt" (this builds abaaso into <em>lib</em> &amp; runs the unit tests)</li>
-</ol><h2>License</h2>
-
-<p>abaaso is licensed under BSD-3 <a href="https://raw.github.com/avoidwork/abaaso/master/LICENSE">https://raw.github.com/avoidwork/abaaso/master/LICENSE</a></p>
-
-<h3>Copyright</h3>
-
-<p>Copyright (c) 2012, Jason Mulligan <a href="mailto:jason.mulligan@avoidwork.com">jason.mulligan@avoidwork.com</a></p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/avoidwork">avoidwork</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+<article>
+  <section id="main">
+    <div>
+      <h2>abaaso is a modern, lightweight Enterprise class RESTful JavaScript application framework.</h2>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+
+    <div class="boxes">
+      <a class="box" href="http://cdn.abaaso.com/abaaso.min.js" data-section="download" title="Download production version">Download</a>
+      <a class="box section" href="https://github.com/avoidwork/abaaso/wiki" title="View API documentation">API</a>
+      <a class="box section last"  href="https://github.com/avoidwork/abaaso/wiki/tutorials" title="View tutorials">Tutorials</a>
+    </div>
+
+    <div>
+      <ul>
+        <li><input type="radio" name="package" id="production" value="http://cdn.abaaso.com/abaaso.min.js" data-type="production" checked> <label for="production" data-type="production">Production</label></li>
+        <li><input type="radio" name="package" id="debugging" value="http://cdn.abaaso.com/abaaso.js" data-type="debugging"> <label for="debugging" data-type="debugging">Debugging</label></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="container">
+        <div class="half">
+          <h2>Features</h2>
+          <ul>
+            <li>Automatic RESTful AJAX</li>
+            <li>Application state driven by custom HTTP header</li>
+            <li>Object Oriented Programming</li>
+            <li>Semantic classes &amp; methods</li>
+            <li>abaaso() for DOM queries &amp; sugar</li>
+            <li>Familiar API</li>
+            <li>Evented with a global observer</li>
+          </ul>
+        </div>
+        <div class="half last">
+          <h2>Supports</h2>
+          <ul>
+            <li>Microsoft Internet Explorer 8+ (standards mode)</li>
+            <li>Google Chrome 6+ / Android 2.3+</li>
+            <li>Mozilla FireFox 3.6+</li>
+            <li>Apple Safari 5+ / iPhone / iPod Touch / iPad</li>
+            <li>HTML5 browsers (smart phones, TVs, etc.)</li>
+            <li>AMD loaders (require.js, cujo.js)</li>
+            <li>node.js &amp; npm (npm install abaaso)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2>Current Version</h2>
+      <span class="version">?</span>
+    </div>
+
+    <div>
+      <ul id="social">
+        <li><iframe src="http://ghbtns.com/github-btn.html?user=avoidwork&repo=abaaso&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe></li>
+        <li><div class="fb-like" data-href="http://abaaso.com" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="arial"></div></li>
+        <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://abaaso.com" data-text="abaaso RESTful JavaScript application framework" data-via="abaaso">Tweet</a></li>
+        <li><div class="g-plusone" data-size="medium" data-href="http://abaaso.com"></div></li>
+      </ul>
+    </div>
+
+  </section>
+
+<footer>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+    ">
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+  </form>
+</footer>
+
+<a href="https://github.com/avoidwork/abaaso" class="github" title="Fork me on GitHub"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" /></a>
+
+<!-- social media elements -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+</body>
 </html>
